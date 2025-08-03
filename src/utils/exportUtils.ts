@@ -1,4 +1,4 @@
-import * as XLSX from "xlsx";
+import * as XLSX from "sheetjs-style";
 import * as FileSystem from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { Attendance } from "../types";
