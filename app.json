@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "app",
-    "slug": "app",
+    "name": "PASS IDAT",
+    "slug": "pass-idat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "ios": {
       "supportsTablet": true
@@ -18,12 +18,34 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.anav5704.passidat"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "permissions": [
+      "camera",
+      "media-library"
+    ],
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow PASS Attendance Tracker to access camera for scanning student ID barcodes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "df49e7b7-4005-4051-a923-4a4574e74cfd"
+      }
     }
   }
 }
